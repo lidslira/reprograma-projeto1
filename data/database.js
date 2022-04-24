@@ -4,7 +4,7 @@ const books = [
     genre: 'tecnologia',
     pages: 500,
     recommend: true,
-    readed: true
+    read: true
   },
   {
     name: 'Algoritmos de destruição em massa',
