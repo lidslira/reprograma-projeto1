@@ -7,7 +7,7 @@ const ordenatedBooks = () => {
   `).toUpperCase();
 
     if (confirmation === 'S') {
-      const ordinateBooks = books.sort((a,b) => b.pages - a.pages);
+      const ordinateBooks = books.sort((a,b) => a.pages - b.pages);
       console.table(ordinateBooks);
     } else  console.log('Ok, até a próxima!');
   }
