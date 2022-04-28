@@ -1,6 +1,5 @@
 const books = require('../data/database');
 const read = require('readline-sync');
-const App = require('../app');
 
 const recommendedBooks = () => {
   const confirmation = read.question('Tem certeza que deseja ver os livros recomendados? S/N ').toUpperCase();
@@ -8,7 +7,7 @@ const recommendedBooks = () => {
     if (confirmation === 'S') {
       const recommendedBooks = books.filter(item => item.recommend)
       console.table(recommendedBooks);
-    } else App();
+    } else  console.log('Ok, até a próxima!');
   }
 
 module.exports = recommendedBooks;

@@ -1,6 +1,5 @@
 const books = require('../data/database');
 const read = require('readline-sync');
-const App = require('../app');
 
 const noReadBooks = () => {
   const confirmation = read.question('Tem certeza que deseja ver os livros não lidos? S/N ').toUpperCase();
@@ -8,9 +7,7 @@ const noReadBooks = () => {
     if (confirmation === 'S') {
       const noReadBooks = books.filter(item => !item.read)
       console.table(noReadBooks); 
-    } else {
-      App(); 
-    }
+    } else  console.log('Ok, até a próxima!');
   }
 
 module.exports = noReadBooks;

@@ -32,11 +32,10 @@ const App = () => {
       noReadBooks();
       break;
     case '5':
-      // leave
+      console.log('Ok, até a próxima!');
       break;
     default:
-      console.log('End of algorithm')
+      console.log('Fim do algoritmo')
   }
 }
-
 module.exports = App();

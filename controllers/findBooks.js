@@ -1,6 +1,5 @@
 const books = require('../data/database');
 const read = require('readline-sync');
-const App = require('../app');
 
 const searchBooks = () => {
   const firstOption = read.question('Deseja buscar por categoria? S/N ').toUpperCase();
@@ -20,7 +19,8 @@ const searchBooks = () => {
       const filteredBooks = books.filter(item => item.genre === inputGenre)
       console.table(filteredBooks);
     }
-  } else App();
+  } else  console.log('Ok, até a próxima!');
+
 }
 
 module.exports = searchBooks;
